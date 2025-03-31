@@ -1,0 +1,161 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define pb push_back
+#define max_vect(v) *max_element(v.begin(), v.end())
+#define min_vect(v) *min_element(v.begin(), v.end())
+#define vll vector<long long>
+#define f(i,k,n) for(ll i=k; i<n; i++)
+#define e endl
+#define yes cout<<"YES"<<endl
+#define no cout<<"NO"<<endl
+#define pvec(v,n) for(ll i=0; i<n; i++){ cout<<v[i]<<" "; } cout<<endl;
+#define sorting(v) sort(v.begin(),v.end())
+#define pr(a) cout<<a<<endl
+#define w int t; cin>>t; while(t--)
+
+const int ORDER = 3;  // B-Tree of order 3: max 3 children per node, max 2 keys per node
+
+// B-Tree Node structure
+class BTreeNode {
+public:
+    int keys[ORDER - 1];    // Array of keys (max 2 keys per node)
+    BTreeNode* children[ORDER];  // Array of child pointers (max 3 children)
+    int numKeys;            // Current number of keys
+    bool leaf;              // True if node is a leaf
+
+    BTreeNode(bool leaf);
+    void traverse();
+    void insertNonFull(int key);
+    void splitChild(int index, BTreeNode* child);
+
+    friend class BTree;
+};
+
+class BTree {
+public:
+    BTreeNode* root;
+    BTree() { root = nullptr; }
+    void insert(int key);
+    void traverse() { if(root) root->traverse(); }
+};
+
+// Constructor for BTreeNode
+BTreeNode::BTreeNode(bool leaf) {
+    this->leaf = leaf;
+    numKeys = 0;
+    f(i, 0, ORDER) {
+        children[i] = nullptr;
+    }
+}
+
+// Function to traverse the tree (in-order)
+void BTreeNode::traverse() {
+    int i;
+    for(i = 0; i < numKeys; i++) {
+        if (!leaf)
+            children[i]->traverse();
+        cout << keys[i] << " ";
+    }
+    if (!leaf)
+        children[i]->traverse();
+}
+
+// Function to insert a key into a node that is guaranteed not to be full
+void BTreeNode::insertNonFull(int key) {
+    int i = numKeys - 1;
+    if (leaf) {
+        // Move keys greater than 'key' one position ahead
+        while(i >= 0 && keys[i] > key) {
+            keys[i+1] = keys[i];
+            i--;
+        }
+        keys[i+1] = key;
+        numKeys++;
+    } else {
+        // Find the child which is going to have the new key
+        while(i >= 0 && keys[i] > key)
+            i--;
+        i++;
+        // If the found child is full, split it
+        if (children[i]->numKeys == ORDER - 1) {
+            splitChild(i, children[i]);
+            if(keys[i] < key)
+                i++;
+        }
+        children[i]->insertNonFull(key);
+    }
+}
+
+// Function to split the child y of this node. i is index of y in child array.
+void BTreeNode::splitChild(int i, BTreeNode* y) {
+    // Create a new node which will store (ORDER-1)/2 keys of y
+    BTreeNode* z = new BTreeNode(y->leaf);
+    z->numKeys = (ORDER - 1) / 2;  // For ORDER 3, (3-1)/2 = 1 key
+
+    // Copy the last (ORDER-1)/2 keys of y to z
+    for (int j = 0; j < (ORDER - 1) / 2; j++) {
+        z->keys[j] = y->keys[j + (ORDER+1)/2];
+    }
+
+    // If y is not a leaf, copy the last (ORDER+1)/2 children of y to z
+    if (!y->leaf) {
+        for (int j = 0; j < (ORDER+1)/2; j++) {
+            z->children[j] = y->children[j + (ORDER+1)/2];
+        }
+    }
+
+    y->numKeys = (ORDER - 1) / 2;  // Reduce the number of keys in y
+
+    // Make room for new child in this node
+    for (int j = numKeys; j >= i+1; j--) {
+        children[j+1] = children[j];
+    }
+    children[i+1] = z;
+
+    // Move keys to create space for middle key of y
+    for (int j = numKeys-1; j >= i; j--) {
+        keys[j+1] = keys[j];
+    }
+    keys[i] = y->keys[(ORDER - 1)/2];
+    numKeys++;
+}
+
+// Function to insert a key in the B-Tree
+void BTree::insert(int key) {
+    // If tree is empty, create a new root
+    if(root == nullptr) {
+        root = new BTreeNode(true);
+        root->keys[0] = key;
+        root->numKeys = 1;
+    } else {
+        // If root is full, then tree grows in height
+        if(root->numKeys == ORDER - 1) {
+            BTreeNode* s = new BTreeNode(false);
+            s->children[0] = root;
+            s->splitChild(0, root);
+            int i = 0;
+            if(s->keys[0] < key)
+                i++;
+            s->children[i]->insertNonFull(key);
+            root = s;
+        } else {
+            root->insertNonFull(key);
+        }
+    }
+}
+
+int main(){
+    BTree tree;
+    // Insert given values into the tree
+    int values[] = {7, 8, 9, 10, 11, 16, 21, 18};
+    f(i, 0, 8) {
+        tree.insert(values[i]);
+    }
+    
+    cout << "B-Tree Traversal: ";
+    tree.traverse();
+    cout << e;
+    return 0;
+}
