@@ -1,6 +1,8 @@
 <!-- Main Content -->
   <main class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-7 mt-40">Organizing Committee</h1>
+    <div class="styleheading">
+      <span class="nitish">Organizing Committee</span>
+    </div>
     <h2 class="text-2xl font-bold mb-3 mt-10">Chief Patron</h2>
     <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
       <div class="inner-box">
