@@ -1,9 +1,156 @@
-<!-- Main Content -->
-  <main class="container mx-auto p-4">
-    <div class="styleheading">
-      <span class="nitish">Organizing Committee</span>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/logo1.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizing Committee</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&amp;family=Roboto+Slab&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+
+  <nav class="main-menu d-flex navbar fixed-top navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 mx-auto">
+
+    <div class="w-100 py-2 border-bottom" style="background-color: #efefef9b; border-radius: 30px;" >
+      <div class="container d-flex justify-content-between align-items-center">
+        <a target="_blank" href="https://nitjsr.ac.in/">
+          <img style="height: 45px;" src="images/NITJSRNEWLOG.png" alt="logo" class="mb-1 mx-auto img-fluid" width="400" height="40">
+        </a>
+        <a target="_blank" href="https://ieeenitjsr.netlify.app/">
+          <img style="height: 45px;" src="images/nitlogosc.png" alt="logo" class="mb-1 mx-auto img-fluid" width="70" height="45">
+        </a>
+        <!-- <a href="index.html">
+          <img style="height: 55px;" src="images/nitj.jpg" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a> -->
+        <a target="_blank" href="https://ewh.ieee.org/r10/calcutta/">
+          <img style="height: 45px;" src="images/IEEEkol.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a>
+        <a target="_blank" href="https://www.ieee.org/">
+          <img style="height: 45px;" src="images/ieeen.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a>
+        <a target="_blank" href="https://www.ieee-ies.org/">
+          <img style="height: 45px;" src="images/ies.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="45">
+        </a>
+        <a target="_blank" href="https://vlsisocietyofindia.org/">
+          <img style="height: 45px;" src="images/vlsi-logo.webp" alt="logo" class="mb-1 mx-auto img-fluid" width="70" height="45">
+        </a>
+      </div>
     </div>
-    <h2 class="text-2xl font-bold mb-3 mt-10">Chief Patron</h2>
+
+
+    <div class="container-fluid">
+      <div class="main-logo">
+        <a href="index.html">
+          <img style="height: 75px;" src="images/logo.gif" alt="logo" class="mb-0 mx-auto img-fluid" width="100" height="100">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav menu-list list-unstyled align-items-lg-center d-flex gap-md-3 mb-0">
+            <li class="nav-item text-capitalize text-center">
+              <a href="generalchair.html" class="nav-link mx-1">General Chair</a>
+            </li>
+
+            <li class="nav-item dropdown text-white">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Committee</a>
+              <ul class="dropdown-menu" aria-labelledby="pages">
+                <li><a href="internationaladvisory.html" class="dropdown-item">Advisory Committee</a></li>
+                <li><a href="organizingcommittee.html" class="dropdown-item">Organizing Committee</a></li>
+                <li><a href="technicalprogramcommittee.html" class="dropdown-item">Technical Program Committee</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item dropdown text-white">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Authors</a>
+              <ul class="dropdown-menu" aria-labelledby="pages">
+                <li><a href="callforpapers.html" class="dropdown-item">Call for Papers</a></li>
+                <li><a href="SS.html" class="dropdown-item">Call for Special Session</a></li>
+                <li><a href="crucialdates.html" class="dropdown-item">Important Dates</a></li>
+                <li><a href="manuscriptsubmission.html" class="dropdown-item">Paper Submission Guidelines</a></li>
+                <li><a href="confprogram.html" class="dropdown-item">Conference Program</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-capitalize text-center">
+              <a href="keynotespeakers.html" class="nav-link mx-1">Speakers</a>
+            </li>
+                        
+         <li class="nav-item text-light">
+              <a href="sponsorship.html" class="nav-link mx-1">Sponsors</a>
+            </li>
+
+            <li class="nav-item text-light">
+              <a href="registrationdetails.html" class="nav-link mx-1">Registration</a>
+            </li>
+
+            <li class="nav-item text-light">
+              <a href="contact.html" class="nav-link mx-1">Contact Us</a>
+            </li>
+            
+            </li>
+          </ul>
+          <div class="d-none d-lg-flex align-items-center ms-5">
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+            <ul class="d-flex justify-content-end  list-unstyled m-0">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-lg-none">
+      <div class="d-flex align-items-end mt-3">
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Main Content -->
+  <div class="styleheading mt-40">
+    <span class="nitish">Organizing Committee</span>
+  </div>
+  <main class="container mx-auto p-4">
+    <h3 class="headingP text-2xl font-bold mb-3 mt-10">Chief Patron</h3>
+    <div class="row">
+      <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+        <div class="inner-box">
+          <div class="image-box">
+            <figure class="image"><a href="#"><img src="images/dir.png" alt="Prof. Dong-Won Kang"></a></figure>
+          </div>
+          <div class="info-box">
+            <h4 class="name"><a href="#">Prof. Goutam Sutradhar</a></h4>
+            <span class="designation">Director, NIT Jamshedpur</span>
+          </div>
+          <div class="social-box">
+            <ul class="social-links social-icon-colored">
+              <li></li>
+              <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Patron</h3>
+  <div class="row">
     <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
       <div class="inner-box">
         <div class="image-box">
@@ -21,142 +168,293 @@
         </div>
       </div>
     </div>
-    
-  </main>
+  </div>
+</main>
 
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Patron</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/RVS.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Prof. R.V. Sharma</h2>
-        <p class="text-sm text-gray-600"><b>Deputy Director, NIT, Jamshedpur</b></p>
-      </div>
-
-    </div>
-  </main>
-
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Convenor</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/Madhu.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Madhu Singh</h2>
-        <p class="text-sm text-gray-600"><b>Associate Professor, NIT Jamshedpur</b></p>
-        
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Convenor</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/dir.png" alt="Prof. Dong-Won Kang"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Goutam Sutradhar</a></h4>
+          <span class="designation">Director, NIT Jamshedpur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
 
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Honorary Chairs</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/sanj.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Prof. Sanjeevi k Padmanaban</h2>
-        <p class="text-sm text-gray-600"><b>University of South-Eastern, Norway</b></p>
-      </div>
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/nitm.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Prof. N. P. Padhy</h2>
-        <p class="text-sm text-gray-600"><b> Director, MNIT Jaipur</b></p>
-      </div>
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/Puneet.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Puneet Kumar Mishra</h2>
-        <p class="text-sm text-gray-600"><b>2025 VP (Education), IEEE AESS</b></p>
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Honorary Chairs</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Sanjeevi k Padmanaban</a></h4>
+          <span class="designation">University of South-Eastern, Norway</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
 
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">General Chairs</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/veer.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Veerpratap Meena, Fellow IEEE</h2>
-        <p class="text-sm text-gray-600"><b>Assistant Professor, NIT Jamshedpur</b></p>
+    <!-- Repeat the above block for each speaker -->
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. N. P. Padhy</a></h4>
+          <span class="designation">Director, MNIT Jaipur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
 
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Organising Chairs </h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/PC.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Prof. Prabha Chand</h2>
-        <p class="text-sm text-gray-600"><b>Professor, NIT Jamshedpur</b></p>
-      </div>
-
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/skc.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Suparna Kar Chowdhury</h2>
-        <p class="text-sm text-gray-600"><b>Jadavpur University</b></p>
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Dr. Puneet Kumar Mishra</a></h4>
+          <span class="designation">2025 VP (Education), IEEE AESS</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Organizing Secretaries</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/nam.png" alt="Member 2" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Kumari Namrata</h2>
-        <p class="text-sm text-gray-600"><b>Associate Professor, NIT Jamshedpur</b></p>
-      </div>
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/jitu.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Jitendra Kumar</h2>
-        <p class="text-sm text-gray-600"><b>Assistant Professor, NIT Jamshedpur</b></p>
-             </div>
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/surya.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Suryaprakash</h2>
-        <p class="text-sm text-gray-600"><b>Assistant Professor, NIT Jamshedpur</b></p>
-            </div>
-    </div>
-  </main>
-
-  <main class="container mx-auto p-4">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Technical Program Chairs</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/tnag.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Tridibesh Nag</h2>
-        <p class="text-sm text-gray-600"><b>IEEE Kolkatta Section</b></p>
-      </div>
-
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/ak.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Atanu Kundu</h2>
-        <p class="text-sm text-gray-600"><b>IEEE Kolkatta Section</b></p>
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">General Chairs</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/dir.png" alt="Prof. Dong-Won Kang"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Goutam Sutradhar</a></h4>
+          <span class="designation">Director, NIT Jamshedpur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
-  <main class="container mx-auto p-1">
-    <h3 class="text-2xl font-bold mb-3 mt-10">Web & Social Media Chairs</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <div class="p-4 bg-white shadow-md rounded-lg text-center">
-        <img src="images/nishant.png" alt="Member 1" class="w-30 h-40 mx-auto rounded-full mb-2 img-fluid">
-        <h2 class="text-lg font-bold">Dr. Nishant Kumar</h2>
-        <p class="text-sm text-gray-600"><b>Assistant Professor</b></p>
-               <p class="text-sm text-gray-600"><b>B K Birla Institute of Engineering & Technoloy Pilani</b></p>
+  </div>
+</main>
+
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Organising Chairs </h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Sanjeevi k Padmanaban</a></h4>
+          <span class="designation">University of South-Eastern, Norway</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </main>
+
+    <!-- Repeat the above block for each speaker -->
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. N. P. Padhy</a></h4>
+          <span class="designation">Director, MNIT Jaipur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Organizing Secretaries</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Sanjeevi k Padmanaban</a></h4>
+          <span class="designation">University of South-Eastern, Norway</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above block for each speaker -->
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. N. P. Padhy</a></h4>
+          <span class="designation">Director, MNIT Jaipur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. N. P. Padhy</a></h4>
+          <span class="designation">Director, MNIT Jaipur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<main class="container mx-auto p-4">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Technical Program Chairs</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Sanjeevi k Padmanaban</a></h4>
+          <span class="designation">University of South-Eastern, Norway</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat the above block for each speaker -->
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. N. P. Padhy</a></h4>
+          <span class="designation">Director, MNIT Jaipur</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<main class="container mx-auto p-1">
+  <h3 class="text-2xl font-bold mb-3 mt-10">Web & Social Media Chairs</h3>
+  <div class="row">
+    <div class="speaker-block-three col-xl-3 col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+      <div class="inner-box">
+        <div class="image-box">
+          <figure class="image"><a href="#"><img src="images/sanj.png" alt="Prof. Goutam Sutradhar"></a></figure>
+        </div>
+        <div class="info-box">
+          <h4 class="name"><a href="#">Prof. Sanjeevi k Padmanaban</a></h4>
+          <span class="designation">University of South-Eastern, Norway</span>
+        </div>
+        <div class="social-box">
+          <ul class="social-links social-icon-colored">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- Footer-->
+  <footer class="bg-black text-center py-5">
+    <div class="container px-5">
+        <div class="text-white-50 large">
+            <div class="mb-2">&copy; ICE2CPT-2025. All Rights Reserved.</div>
+            <span class="mx-2">&middot;</span>
+            <a href="./about.html">About Us</a>
+            <span class="mx-2">&middot;</span>
+            <a href="./venue.html">Key Attractions</a>
+            <span class="mx-2">&middot;</span>
+            <a href="https://nitjsr.ac.in/" target="_blank" rel="noreferrer nofollow">NITJSR Website</a>
+            <hr>
+            <div class="mb-2">Developed by Electrical Engineering, NIT Jamshedpur</div>
+        </div>
+    </div>
+</footer>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+ </body>
+</html>
