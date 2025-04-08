@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technical Program Committee</title>
+     <meta charset="utf-8">
+  <link rel="icon" href="images/logo1.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  </head>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body class="bg-gray-100 text-gray-800">
+  <nav class="main-menu d-flex navbar fixed-top navbar-expand-lg p-2 py-3 p-lg-4 py-lg-4 mx-auto">
+
+    <div class="w-100 py-2 border-bottom" style="background-color: #efefef9b; border-radius: 30px;" >
+      <div class="container d-flex justify-content-between align-items-center">
+        <a target="_blank" href="https://nitjsr.ac.in/">
+          <img style="height: 45px;" src="images/NITJSRNEWLOG.png" alt="logo" class="mb-1 mx-auto img-fluid" width="400" height="40">
+        </a>
+        <a target="_blank" href="https://ieeenitjsr.netlify.app/">
+          <img style="height: 45px;" src="images/nitlogosc.png" alt="logo" class="mb-1 mx-auto img-fluid" width="70" height="45">
+        </a>
+        <!-- <a href="index.html">
+          <img style="height: 55px;" src="images/nitj.jpg" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a> -->
+        <a target="_blank" href="https://ewh.ieee.org/r10/calcutta/">
+          <img style="height: 45px;" src="images/IEEEkol.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a>
+        <a target="_blank" href="https://www.ieee.org/">
+          <img style="height: 45px;" src="images/ieeen.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="25">
+        </a>
+        <a target="_blank" href="https://www.ieee-ies.org/">
+          <img style="height: 45px;" src="images/ies.png" alt="logo" class="mb-1 mx-auto img-fluid" width="100" height="45">
+        </a>
+        <a target="_blank" href="https://vlsisocietyofindia.org/">
+          <img style="height: 45px;" src="images/vlsi-logo.webp" alt="logo" class="mb-1 mx-auto img-fluid" width="70" height="45">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="main-logo">
+        <a href="index.html">
+          <img style="height: 75px;" src="images/logo.gif" alt="logo" class="mb-0 mx-auto img-fluid" width="100" height="100">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav menu-list list-unstyled align-items-lg-center d-flex gap-md-3 mb-0">
+            <li class="nav-item text-capitalize text-center">
+              <a href="generalchair.html" class="nav-link mx-1">General Chair</a>
+            </li>
+
+            <li class="nav-item dropdown text-white">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Committee</a>
+              <ul class="dropdown-menu" aria-labelledby="pages">
+                <li><a href="internationaladvisory.html" class="dropdown-item">Advisory Committee</a></li>
+                <li><a href="organizingcommittee.html" class="dropdown-item">Organizing Committee</a></li>
+                <li><a href="technicalprogramcommittee.html" class="dropdown-item">Technical Program Committee</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item dropdown text-white">
+              <a class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Authors</a>
+              <ul class="dropdown-menu" aria-labelledby="pages">
+                <li><a href="callforpapers.html" class="dropdown-item">Call for Papers</a></li>
+                <li><a href="SS.html" class="dropdown-item">Call for Special Session</a></li>
+                <li><a href="crucialdates.html" class="dropdown-item">Important Dates</a></li>
+                <li><a href="manuscriptsubmission.html" class="dropdown-item">Paper Submission Guidelines</a></li>
+                <li><a href="confprogram.html" class="dropdown-item">Conference Program</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item text-capitalize text-center">
+              <a href="keynotespeakers.html" class="nav-link mx-1">Speakers</a>
+            </li>
+                        
+         <li class="nav-item text-light">
+              <a href="sponsorship.html" class="nav-link mx-1">Sponsors</a>
+            </li>
+
+            <li class="nav-item text-light">
+              <a href="registrationdetails.html" class="nav-link mx-1">Registration</a>
+            </li>
+
+            <li class="nav-item text-light">
+              <a href="contact.html" class="nav-link mx-1">Contact Us</a>
+            </li>
+            
+            </li>
+          </ul>
+          <div class="d-none d-lg-flex align-items-center ms-5">
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+            <ul class="d-flex justify-content-end  list-unstyled m-0">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-lg-none">
+      <div class="d-flex align-items-end mt-3">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-12">
+    <h1 class="text-4xl font-bold mb-4 mt-40">Technical Program Committee</h1>
+    <p class="mb-6">Meet the distinguished members of our Technical Program Committee who play a key role in shaping the content and structure of the conference.</p>
+    
+  <section class="course_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 style="text-align: center;">
+          <span>Technical</span> Program Committee
+        </h2>
+        <br>
+      </div>
+      <div class="cfa_heading">
+        <table class="table table-striped">
+          <tbody>
+            
+            <tr>
+              <td>Dr. Sagar Bhaskar Mahajan</td>
+              <td>Prince Sultan University </td>
+            </tr>
+            <tr>
+              <tr>
+                <td> Dil Khush Meena</td>
+                <td>University of New South Wales Sydney, Australia </td>
+              </tr>
+              <tr>
+
+             
+              <td>Dr.R.Aiyshwariya Devi </td>
+              <td> R.M.K. College Of Engineering and Technology </td>
+            </tr>
+            <tr>
+              <tr>
+                <td> Dr Bishwa Ranjan Das</td>
+                <td> Ravenshaw University, Cuttack </td>
+              </tr>
+              <tr>
+                <td> Dr. Sabyasachi Bhattacharyya</td>
+                <td> Barak Valley Engineering College, Karimganj ; Residential Girls' Polytechnic, Golaghat (Under Govt. of Assam)</td>
+              </tr>
+              <tr>
+                <td>Dr. Arigela Sri Satya Veerendra Babu</td>
+                <td>Manipal Institute of Technology, MAHE 
+                </td>
+              </tr>
+              <tr>
+                <td>Dr. Bhaskar Roy</td>
+                <td> Asansol Engineering College
+                </td>
+              </tr>
+              <tr>
+                <td>Dr.Shreyas Rajendra Hole </td>
+                <td>Dayananda Sagar University </td>
+              </tr>
+              <tr>
+                <td>Dr SUMALATHA V</td>
+                <td>Vels Institute of Science Technology and Advanced Studies </td>
+              </tr>
+              <tr>
+                <td>Dr. Basheer Ahmad </td>
+                <td>International Islamic University  </td>
+              </tr>
+
+              <tr>
+                <td>Dr. Md Irfan Ahmed </td>
+                <td>ARKA JAIN UNIVERSITY JHARKHAND </td>
+              </tr>
+              <tr>
+                <td>Dr. Rudranarayan Pradhan
+                </td>
+                <td>Odisha University of Technology  and Research, Bhubaneswar , Odisha Bhubaneswar 
+                </td>
+              </tr>
+              <tr>
+                <td>Dr. Munna Kumar
+                </td>
+                <td>ARMIET, SHAHAPUR, India 
+                </td>
+              </tr>
+              <td>Dr. Rajakumar Sakile </td>
+              <td>Clean Electric Pvt. Ltd.  </td>
+            </tr>
+            <tr>
+              <td>Dr. Bidrohi  Bhattacharjee
+              </td>
+              <td>Budge Budge Institute of Technology 
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Rashmi  Sharma </td>
+              <td>RGPV </td>
+            </tr>
+            <tr>
+              <td>Dr. T. Ananth Kumar </td>
+              <td>IFET college of Engineering </td>
+            </tr>
+            <tr>
+              <td>Dr. Eashwar Sivakumar </td>
+              <td>Jain (Deemed-to-be) University  </td>
+            </tr>
+            <tr>
+              <td>Dr. Buddhadeva Sahoo
+              </td>
+              <td> SR University 
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Dogga  Raveendhra </td>
+              <td>MNNIT Allahabad </td>
+            </tr>
+            <tr>
+              <td>Dr. Kannadhasan Suriyan 
+              </td>
+              <td> Study World College of Engineering 
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Neelesh  Kumar  Jain
+              </td>
+              <td>Parul University, Vadodara </td>
+            </tr>
+            <tr>
+              <td>Dr. Abhishek Bal </td>
+              <td>RCC Institute of Information Technology </td>
+            </tr>
+            <tr>
+              <td>Dr. Ravi Eswar KM</td>
+              <td> SRM INSTITUTE OF SCIENCE AND TECHNOLOGY-KATTANKULATHUR </td>
+            </tr>
+            <tr>
+
+              <tr>
+               <td>Rajesh Singh Shekhawat 
+                </td>
+                <td>BK Birla Institute of Engineering & Technology, Pilani, India</td>
+              </tr>
+           <tr>
+              <td>Kishor Kumar Reddy C</td>
+              <td>Stanley College of Engineering and Technology for Women</td>
+            </tr>
+            <tr>
+              <td>David  Solomon Raju Yellampalli</td>
+              <td>Holy Mary Institute of Technology & Science (Autonomous)</td>
+            </tr>
+            <tr>
+              <td> Ashok P</td>
+              <td> Symbiosis Institute of Digital and Telecom Management (SIDTM), Symbiosis International (Deemed University), India</td>
+            </tr>
+                       
+              <td> Abhishek Singh Gaharwar</td>
+              <td> Faculty of Management, Barkatullah University, Bhopal, Madhya Pradesh, India</td>
+            </tr>
+                       <tr>
+              <td> S M Masfequier Rahman  Swapno</td>
+              <td>Bangladesh University of Business & Technology 
+              </td>
+            </tr>
+                        <tr>
+              <td>Anjali Kumari </td>
+              <td> Birla Institute of Technology Mesra mesra 
+              </td>
+            </tr>
+              <tr>
+              <td>Venkata Naga  Sujit Vudattu </td>
+              <td>Sasi Institute of Technology and Engineering </td>
+            </tr>
+            <tr>
+              <td>Ashfaque Ahmed Chowdhury</td>
+              <td>Central Queensland University </td>
+            </tr>
+            <tr>
+              <td>Mohammad Mominur Rahman</td>
+              <td>Hamad Bin Khalifa University</td>
+            </tr>
+            <tr>
+              <td>Shreenithi Lakshmi Narasimhan</td>
+              <td>Global Climate Collective</td>
+            </tr>
+            <tr>
+              <td>Md Mahmudul Hoque</td>
+              <td>CCN University of Science and Technology </td>
+            </tr>
+            <tr>
+              <td>Md Mehedi Hassain </td>
+              <td>International Islamic University Chittagong </td>
+            </tr>
+                        <tr>
+              <td>Dipak Suresh Yeole</td>
+              <td>Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering & Technology</td>
+            </tr>
+            <tr>
+              <td>Somesubhra Panda  </td>
+              <td> Global Institute of Science & Technology
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Neelam Sanjeev Kumar </td>
+              <td>SRM Institute of Science and Technology Vadapalani Chennai </td>
+            </tr>
+           
+            <tr>
+              <td>Chinmay Bera</td>
+              <td>NIT Patna </td>
+            </tr>
+           
+            <tr>
+              <td>Tharwin Kumar R
+              </td>
+              <td>Puducherry Technological University 
+              </td>
+            </tr>
+            <tr>
+              <td>Anubhav Shrestha
+              </td>
+              <td>ARKA JAIN University
+              </td>
+            </tr>
+            <tr>
+              <td>Manjeet Singh
+              </td>
+              <td>Thapar Institute of Engineering & Technology 
+              </td>
+            </tr>
+            <tr>
+              <td>Priyaranjan Kumar
+              </td>
+              <td>Birla institute of technology, Mesra
+              </td>
+            </tr>
+            <tr>
+              <td>Somnath Banerjee
+              </td>
+              <td>American Family Insurance 
+              </td>
+            </tr>
+            <tr>
+              <td>Vinod Kumar Saginatham
+              </td>
+              <td> Analog Devices</td>
+            </tr>
+            <tr>
+              <td>ADITYA  PRASADPADHY
+              </td>
+              <td>ARKA JAIN UNIVERSITY, JAMSHEDPUR 
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Balasubramaniam  Akoramurthy </td>
+              <td>National Institute of Technology Puducherry 
+              </td>
+            </tr>
+            <tr>
+              <td>Biswadip Basu Mallik  </td>
+              <td>Institute of Engineering and Management (School of University of Engineering and Management), Kolkata, India  </td>
+            </tr>
+            <tr>
+              <td>Pankaj Kumar  Dubey  </td>
+              <td>Kamla Nehru Institute of Technology Sultanpur, Uttar Pradesh, India </td>
+            </tr>
+            <tr>
+              <td> Dheeraj Dubey </td>
+              <td>Indian Institute of Information Technology Pune
+              </td>
+            </tr>
+            <tr>
+              <td>Mahmood Seyyedzadeh              </td>
+              <td>University of Tabriz/IEEE USA AI Policy Committee Member</td>
+            </tr>
+            <tr>
+              <td>Faiza DIB </td>
+              <td>Faculty of sciences and technologies Al Hoceima,Morocco </td>
+            </tr>
+            <tr>
+              <td>Nayan Kumar </td>
+              <td>Government Engineering College Khagaria Bihar  </td>
+            </tr>
+            
+            <tr>
+              <td>Sujeet Kumar Shah
+              </td>
+              <td>IIT ISM DHANBAD 
+              </td>
+            </tr>
+            <tr>
+              <td>Sonu  Kumar Bairwa
+              </td>
+              <td>Global Institute of Technology, Jaipur 
+              </td>
+            </tr>
+            <tr>
+              <td>MALLE LINGAMAIAH 
+              </td>
+              <td>MANIT BHOPAL 
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Sariki Murali </td>
+              <td>Tata Consultancy Services  </td>
+            </tr>
+            <tr>
+              <td>Aman Kumar </td>
+              <td>Keral Verma Subharti College Of Science, Swami Vivekanand Subharti University, Meerut.  </td>
+            </tr>
+           
+            <tr>
+              <td>Keshav Kaushik </td>
+              <td> Sharda University  </td>
+            </tr>
+            <tr>
+              <td>Ankit  R. Patel </td>
+              <td>University of Minho, Portugal 
+              </td>
+            </tr>
+            <tr>
+              <td>Ankit  Garg </td>
+              <td>MNIT Jaipur    </td>
+            </tr>
+            <tr>
+              <td>Debajyoti Biswas
+              </td>
+              <td>Shiv Nadar University Chennai
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Prabhat  Kumar  Vidyarthi               </td>
+              <td>National Institute of Technology Patna      </td>
+            </tr>
+            
+            <tr>
+              <td>DHEERAJ KUMAR DHAKED
+              </td>
+              <td>IIT ROORKEE
+              </td>
+            </tr>
+            <tr>
+              <td>Jai  Ram
+              </td>
+              <td>NIT jamshedpur 
+              </td>
+            </tr>
+            <tr>
+              <td>G S Pradeep  Ghantasala </td>
+              <td> Alliance University  </td>
+            </tr>
+            <tr>
+              <td>Narendra Khatri  </td>
+              <td>Manipal Institute of Technology, MAHE, Manipal   </td>
+            </tr>
+            <tr>
+              <td>V Senthil Kumar</td>
+              <td>SRM TRP Engineering Colelge </td>
+            </tr>
+           
+           
+            
+            
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+
+
+  
+    
+  </main>
+
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+          <div class="text-white-50 large">
+              <div class="mb-2">&copy; ICE2CPT-2025. All Rights Reserved.</div>
+              <span class="mx-1">&middot;</span>
+              <a href="./about.html">About Us</a>
+              <span class="mx-1">&middot;</span>
+              <a href="./venue.html">Key Attractions</a>
+              <span class="mx-1">&middot;</span>
+              <a href="https://nitjsr.ac.in/" target="_blank" rel="noreferrer nofollow">NITJSR Website</a>
+              <hr>
+              <div class="mb-2">Developed by Electrical Engineering, NIT Jamshedpur</div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</body>
+</html>
